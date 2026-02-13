@@ -1,7 +1,7 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'adhinarayana.official@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Adinarayana, I am reaching out to you because...',
@@ -55,55 +55,55 @@ export const MY_STACK = {
             name: 'Sass',
             icon: '/logo/sass.png',
         },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
     ],
-    backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
-    ],
-    database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
-    ],
+    // backend: [
+    //     {
+    //         name: 'Node.js',
+    //         icon: '/logo/node.png',
+    //     },
+    //     {
+    //         name: 'NestJS',
+    //         icon: '/logo/nest.svg',
+    //     },
+    //     {
+    //         name: 'Express.js',
+    //         icon: '/logo/express.png',
+    //     },
+    // ],
+    // database: [
+    //     {
+    //         name: 'MySQL',
+    //         icon: '/logo/mysql.svg',
+    //     },
+    //     {
+    //         name: 'PostgreSQL',
+    //         icon: '/logo/postgreSQL.png',
+    //     },
+    //     {
+    //         name: 'MongoDB',
+    //         icon: '/logo/mongodb.svg',
+    //     },
+    //     {
+    //         name: 'Prisma',
+    //         icon: '/logo/prisma.png',
+    //     },
+    // ],
     tools: [
         {
             name: 'Git',
             icon: '/logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
+            name: 'Postman',
+            icon: '/logo/postman.svg',
         },
         {
-            name: 'AWS',
-            icon: '/logo/aws.png',
+            name: 'Bitbucket',
+            icon: '/logo/bitbucket.svg',
+        },
+        {
+            name: 'Firebase',
+            icon: '/logo/firebase.svg',
         },
     ],
 };
