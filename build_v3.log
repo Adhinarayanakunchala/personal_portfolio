@@ -1,0 +1,36 @@
+﻿
+> adinarayana@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.2.8
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/11) ...
+   Generating static pages (2/11) 
+   Generating static pages (5/11) 
+   Generating static pages (8/11) 
+ Γ£ô Generating static pages (11/11)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS  Revalidate  Expire
+Γöî Γùï /                                    13.3 kB         179 kB          1h      1y
+Γö£ Γùï /_not-found                            977 B         101 kB
+Γö£ ΓùÅ /projects/[slug]                     2.88 kB         162 kB          1h      1y
+Γö£   Γö£ /projects/dr-pick                                                  1h      1y
+Γö£   Γö£ /projects/roboscorp                                                1h      1y
+Γö£   Γö£ /projects/city-rents                                               1h      1y
+Γö£   Γöö [+2 more paths]
+Γöö Γùï /sitemap.xml                           136 B         101 kB
++ First Load JS shared by all             100 kB
+  Γö£ chunks/4bd1b696-c90a28b1ecbf0b56.js  53.3 kB
+  Γö£ chunks/684-f5ae36afcf8c360b.js       45.2 kB
+  Γöö other shared chunks (total)          1.92 kB
+
+
+Γùï  (Static)  prerendered as static content
+ΓùÅ  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
