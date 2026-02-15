@@ -59,6 +59,7 @@ const Button = ({
         light: `bg-background-active text-foreground hover:bg-background-active`,
         dark: `bg-foreground text-background hover:bg-foreground/80`,
         link: `text-foreground hover:text-primary`,
+        outline: `border-2 border-primary text-primary hover:bg-primary hover:text-white`,
         'no-color': '',
     }[variant || 'primary'];
 

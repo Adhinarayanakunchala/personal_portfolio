@@ -76,19 +76,16 @@ const ProjectList = () => {
 
     useGSAP(
         () => {
-            const tl = gsap.timeline({
+            gsap.from(containerRef.current, {
+                y: 50,
+                opacity: 0,
+                duration: 1,
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'top bottom',
-                    end: 'top 80%',
-                    toggleActions: 'restart none none reverse',
-                    scrub: 1,
+                    start: 'top 90%',
+                    end: 'top 60%',
+                    toggleActions: 'play none none reverse',
                 },
-            });
-
-            tl.from(containerRef.current, {
-                y: 150,
-                opacity: 0,
             });
         },
         { scope: containerRef },

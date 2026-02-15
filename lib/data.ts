@@ -11,10 +11,12 @@ export const GENERAL_INFO = {
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/adinarayana' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/adinarayana' },
-    { name: 'facebook', url: 'https://www.facebook.com/adinarayana' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/Adhinarayanakunchala' },
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/adinarayana-kunchala/',
+    },
+    { name: 'instagram', url: 'https://www.instagram.com/its.adhidarling/' },
 ];
 
 export const MY_STACK = {
@@ -54,6 +56,10 @@ export const MY_STACK = {
         {
             name: 'Sass',
             icon: '/logo/sass.png',
+        },
+        {
+            name: 'Firebase',
+            icon: '/logo/firebase.svg',
         },
     ],
     // backend: [
@@ -102,207 +108,167 @@ export const MY_STACK = {
             icon: '/logo/bitbucket.svg',
         },
         {
-            name: 'Firebase',
-            icon: '/logo/firebase.svg',
+            name: 'VS Code',
+            icon: '/logo/vs-code-svgrepo-com.svg',
+        },
+        {
+            name: 'npm',
+            icon: '/logo/npm-svgrepo-com.svg',
         },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
+        title: 'Dr. Pick',
+        slug: 'dr-pick',
+        liveUrl: 'https://drpick.in/',
         year: 2025,
         description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
+          Medical Appointment & Management Platform. <br/> <br/>
+          A comprehensive healthcare platform streamlining doctor appointments and patient management.
+          Features include real-time availability checking, secure patient records, and automated appointment reminders.
+          Designed to improve the efficiency of clinics and enhance the patient experience with a user-friendly interface.
+        `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
+          Frontend Developer <br/>
+          • Developed the patient-facing booking interface with intuitive navigation and calendar integration.<br/>
+          • Implemented secure authentication and dashboard for doctors to manage schedules and patient history.<br/>
+          • Optimized the application for speed and accessibility, ensuring a seamless experience across devices.
+        `,
+        techStack: ['Next.js', 'React', 'Tailwind CSS', 'REST APIs'],
+        thumbnail:
+            '/projects/images/screencapture-drpick-in-2026-02-15-11_59_25.png',
+        longThumbnail:
+            '/projects/images/screencapture-drpick-in-2026-02-15-11_59_25.png',
+        images: [
+            '/projects/images/screencapture-drpick-in-2026-02-15-11_59_25.png',
+        ],
+    },
+    {
+        title: 'RoboScorp',
+        slug: 'roboscorp',
+        liveUrl: 'https://roboscorp.com/',
+        year: 2025,
+        description: `
+          Robotics & Automation Solutions. <br/> <br/>
+          A corporate platform showcasing innovative robotics and automation solutions for various industries.
+          Highlights include interactive product showcases, detailed case studies, and corporate service information.
+          Built to demonstrate technical expertise and modern engineering solutions.
+        `,
+        role: `
+          Frontend Developer <br/>
+          • Built a high-performance landing page with interactive elements to showcase robotic products.<br/>
+          • Integrated 3D models or dynamic visuals (if applicable) to demonstrate automation capabilities.<br/>
+          • Ensured SEO optimization and fast load times for better market reach and user retention.
+        `,
+        techStack: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
+        thumbnail:
+            '/projects/images/screencapture-roboscorp-2026-02-15-12_02_10.png',
+        longThumbnail:
+            '/projects/images/screencapture-roboscorp-2026-02-15-12_02_10.png',
+        images: [
+            '/projects/images/screencapture-roboscorp-2026-02-15-12_02_10.png',
+        ],
+    },
+    {
+        title: 'City Rents',
+        slug: 'city-rents',
+        liveUrl: 'https://dev.cityrents.in/',
+        year: 2025,
+        description: `
+          Property Rental & Management Platform. <br/> <br/>
+          Built and owned the frontend implementation for City Rents, a live property rental and management platform.
+          Implemented server-rendered pages using Next.js (SSR/SSG) to improve SEO, page load performance, and discoverability of property listings.
+          Developed dynamic search, filtering, and categorized property browsing for residential, commercial, and industrial properties.
+        `,
+        role: `
+          Frontend Developer <br/>
+          • Integrated React Query with REST APIs to manage real-time property data, caching strategies, and background synchronization.<br/>
+          • Implemented end-to-end payment flows for booking and rental transactions, including advance payments and agreement-related charges across the platform.<br/>
+          • Built UI workflows to handle rental agreements, payment confirmation states, and transaction validation as part of the booking lifecycle.<br/>
+          • Optimized UI performance and responsiveness to ensure a consistent experience across mobile and desktop devices.
+        `,
         techStack: [
             'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
-    },
-    {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
+            'TypeScript',
             'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
+            'React Query',
             'Tailwind CSS',
         ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
+        thumbnail:
+            '/projects/images/screencapture-dev-cityrents-in-2026-02-15-12_02_40.png',
+        longThumbnail:
+            '/projects/images/screencapture-dev-cityrents-in-2026-02-15-12_02_40.png',
         images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
+            '/projects/images/screencapture-dev-cityrents-in-2026-02-15-12_02_40.png',
         ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
     },
     {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
+        title: 'Cenzo',
+        slug: 'cenzo',
+        liveUrl: 'https://cenzo.in',
+        year: 2025,
+        description: `
+          E-commerce Marketplace Platform. <br/> <br/>
+          Developed the frontend for Cenzo, an e-commerce platform offering groceries, daily essentials, and lifestyle products with fast delivery and dynamic browsing.
+          Built responsive product listing and detail pages to support dynamic filtering, search, and category browsing on the public marketplace.
+        `,
+        role: `
+          Frontend Developer <br/>
+          • Implemented state management using Redux for cart state, user sessions, and synchronized product inventory UI updates.<br/>
+          • Created an admin dashboard interface to manage products, orders, and vendors, enabling real-time updates and operational control.<br/>
+          • Integrated REST APIs for product data, user authentication, order processing, and inventory synchronization with backend services.<br/>
+          • Ensured cross-browser compatibility and performance optimisation for both public and admin views across devices.
+        `,
+        techStack: ['Next.js', 'React', 'Redux', 'Tailwind CSS', 'REST APIs'],
+        thumbnail:
+            '/projects/images/screencapture-cenzo-in-2026-02-15-11_59_55.png',
+        longThumbnail:
+            '/projects/images/screencapture-cenzo-in-2026-02-15-11_59_55.png',
         images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
+            '/projects/images/screencapture-cenzo-in-2026-02-15-11_59_55.png',
         ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
     },
     {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
+        title: 'Fluencyo',
+        slug: 'fluencyo',
+        liveUrl: 'https://www.fluencyo.com',
+        year: 2025,
+        description: `
+          Language Learning Platform. <br/> <br/>
+          Built and maintained the frontend for a language learning platform focused on real-time speaking and interactive lesson experiences.
+          Developed responsive user-facing interfaces for learners to access language content, practice sessions, and engagement flows.
+        `,
+        role: `
+          Frontend Developer <br/>
+          • Designed and implemented admin dashboard interfaces with role-based access to manage users, learning data, and platform operations.<br/>
+          • Used Redux for predictable state management across learner and admin modules, supporting real-time UI updates.<br/>
+          • Designed reusable UI components with Tailwind CSS and Framer Motion to ensure consistency, performance, and smooth user interactions.<br/>
+          • Optimized application performance, accessibility, and cross-browser compatibility for both public and admin platforms.
+        `,
+        techStack: ['React.js', 'Redux', 'Tailwind CSS', 'Framer Motion'],
+        thumbnail:
+            '/projects/images/screencapture-fluencyo-2026-02-15-12_01_12.png',
+        longThumbnail:
+            '/projects/images/screencapture-fluencyo-2026-02-15-12_01_12.png',
         images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
+            '/projects/images/screencapture-fluencyo-2026-02-15-12_01_12.png',
         ],
-        sourceCode: 'https://github.com/adinarayana/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/adinarayana/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
-    },
-    {
         title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        company: 'M Touch Labs Private Limited',
+        duration: 'Aug 2023 - Present',
+        description: `
+          • Owned frontend architecture and feature development for multiple production React and Next.js applications used by real users.<br/>
+          • Designed and implemented real-time frontend features using WebSockets for live data synchronization.<br/>
+          • Integrated secure payment gateways (Razorpay, Stripe) with validation, error handling, and edge-case coverage.<br/>
+          • Managed complex application state using Redux Toolkit and Zustand for predictable data flow.<br/>
+          • Worked closely with backend and design teams to translate product requirements into scalable, maintainable frontend solutions.
+        `,
     },
 ];

@@ -1,5 +1,6 @@
 'use client';
 import SectionTitle from '@/components/SectionTitle';
+import parse from 'html-react-parser';
 import { MY_EXPERIENCE } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -65,9 +66,14 @@ const Experiences = () => {
                             <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
                                 {item.title}
                             </p>
-                            <p className="text-lg text-muted-foreground">
+                            <p className="text-lg text-muted-foreground mb-4">
                                 {item.duration}
                             </p>
+                            {item.description && (
+                                <div className="text-muted-foreground/80 text-base leading-relaxed pl-4 border-l-2 border-primary/20">
+                                    {parse(item.description)}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
